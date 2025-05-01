@@ -1,8 +1,6 @@
 package com.svip;
 
-import com.svip.SIP.Day1.EvenNumber;
-import com.svip.SIP.Day1.EvenOrOdd;
-import com.svip.SIP.Day1.FindEvenOrOdd;
+import com.svip.SIP.Day1.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -22,8 +20,8 @@ public class InterviewPracticeApplication {
 		System.out.println("1. Even Number");
 		System.out.println("2. EvenOrOdd Number");
 		System.out.println("3. FindEvenOrOdd Number");
-		System.out.println("4. reverseOrder Number");
-		System.out.println("5. Duplicate Number");
+		System.out.println("4. Duplicate Number");
+		System.out.println("5. reverseOrder Number");
 
 		System.out.print("Choose an option: ");
 		int choice = scanner.nextInt();
@@ -44,6 +42,20 @@ public class InterviewPracticeApplication {
 				System.out.println("You chose Option Three.");
 				FindEvenOrOdd findEvenOrOdd=new FindEvenOrOdd();
 				findEvenOrOdd.EvenOrOddList();
+				break;
+			case 4:
+				System.out.println("You chose Option Four.");
+				DuplicateNumber duplicateNumber=new DuplicateNumber();
+				System.out.println("Below are Duplicate Number.");
+				duplicateNumber.findDuplicateNumber();
+				System.out.println("Below are Unique Number.");
+				duplicateNumber.findUniqueNumber();
+				break;
+			case 5:
+				System.out.println("You chose Option Five.");
+				DuplicateName duplicateName=new DuplicateName();
+				duplicateName.UniqueNameFromList();
+				duplicateName.DuplicateNameFromList();
 				break;
 			default:
 				System.out.println("Invalid choice.");
