@@ -21,8 +21,8 @@ public class InterviewPracticeApplication {
 		System.out.println("2. EvenOrOdd Number");
 		System.out.println("3. FindEvenOrOdd Number");
 		System.out.println("4. Duplicate Number");
-		System.out.println("5. reverseOrder Number");
-
+		System.out.println("5. Duplicate String");
+		System.out.println("6. Frequecy Charecter");
 		System.out.print("Choose an option: ");
 		int choice = scanner.nextInt();
 		scanner.nextLine(); // Consume the newline character
@@ -56,6 +56,13 @@ public class InterviewPracticeApplication {
 				DuplicateName duplicateName=new DuplicateName();
 				duplicateName.UniqueNameFromList();
 				duplicateName.DuplicateNameFromList();
+				break;
+			case 6:
+				System.out.println("You chose Option Six.");
+				FrequencyOfCharecter freChar=new FrequencyOfCharecter();
+				freChar.FrequencyOfCharecter();
+				System.out.println("-----------------");
+				freChar.FrequecyOfWord();
 				break;
 			default:
 				System.out.println("Invalid choice.");
