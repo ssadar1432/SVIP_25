@@ -5,21 +5,14 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.5</version>
+		<version>2.7.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.svip</groupId>
-<<<<<<< HEAD
 	<artifactId>InterviewPractice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>InterviewPractice</name>
 	<description>InterviewPractice project for Spring Boot and Java 8 practice.</description>
-=======
-	<artifactId>Interview-practice</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>Interview-practice</name>
-	<description> project for Spring Boot</description>
->>>>>>> f52f11959aaa09f573d30246aa5497661642a9cd
 	<url/>
 	<licenses>
 		<license/>
@@ -34,40 +27,25 @@
 		<url/>
 	</scm>
 	<properties>
-		<java.version>17</java.version>
+		<java.version>8</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-<<<<<<< HEAD
-=======
-			<artifactId>spring-boot-starter-data-jpa</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
->>>>>>> f52f11959aaa09f573d30246aa5497661642a9cd
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
-<<<<<<< HEAD
-=======
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-devtools</artifactId>
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<scope>runtime</scope>
-		</dependency>
-		<dependency>
->>>>>>> f52f11959aaa09f573d30246aa5497661642a9cd
+		<!--<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
-		</dependency>
+		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
