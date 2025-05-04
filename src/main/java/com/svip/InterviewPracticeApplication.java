@@ -1,6 +1,9 @@
 package com.svip;
 
 import com.svip.SIP.Day1.*;
+import com.svip.SIP.Day2.ReverseNumber;
+import com.svip.SIP.Day2.ReverseOrderList;
+import com.svip.SIP.Day2.ReverseString;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -23,6 +26,8 @@ public class InterviewPracticeApplication {
 		System.out.println("4. Duplicate Number");
 		System.out.println("5. Duplicate String");
 		System.out.println("6. Frequecy Charecter");
+		System.out.println("7. Reverse Order");
+		System.out.println("8. Reverse String");
 		System.out.print("Choose an option: ");
 		int choice = scanner.nextInt();
 		scanner.nextLine(); // Consume the newline character
@@ -64,6 +69,20 @@ public class InterviewPracticeApplication {
 				System.out.println("-----------------");
 				freChar.FrequecyOfWord();
 				break;
+			case 7:
+				System.out.println("You chose Option seven.");
+				ReverseOrderList reverse=new ReverseOrderList();
+				reverse.ReverseOrder();
+				break;
+			case 8:
+				System.out.println("You chose Option Eight.");
+				ReverseString reverseString=new ReverseString();
+				reverseString.reverseString();
+				ReverseNumber reverseNumber=new ReverseNumber();
+				reverseNumber.reverseNumber();
+
+				break;
+
 			default:
 				System.out.println("Invalid choice.");
 				// Code to execute for an invalid choice
