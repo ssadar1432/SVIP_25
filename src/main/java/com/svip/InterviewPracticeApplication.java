@@ -78,9 +78,6 @@ public class InterviewPracticeApplication {
 				System.out.println("You chose Option Eight.");
 				ReverseString reverseString=new ReverseString();
 				reverseString.reverseString();
-				ReverseNumber reverseNumber=new ReverseNumber();
-				reverseNumber.reverseNumber();
-
 				break;
 
 			default:
