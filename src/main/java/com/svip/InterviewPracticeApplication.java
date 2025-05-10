@@ -1,9 +1,7 @@
 package com.svip;
 
 import com.svip.SIP.Day1.*;
-import com.svip.SIP.Day2.ReverseNumber;
-import com.svip.SIP.Day2.ReverseOrderList;
-import com.svip.SIP.Day2.ReverseString;
+import com.svip.SIP.Day2.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
@@ -28,6 +26,9 @@ public class InterviewPracticeApplication {
 		System.out.println("6. Frequecy Charecter");
 		System.out.println("7. Reverse Order");
 		System.out.println("8. Reverse String");
+		System.out.println("9. Max and Min Number");
+		System.out.println("10. Max 3 and Min 3 Number");
+		System.out.println("11. Second Largest Number");
 		System.out.print("Choose an option: ");
 		int choice = scanner.nextInt();
 		scanner.nextLine(); // Consume the newline character
@@ -78,6 +79,23 @@ public class InterviewPracticeApplication {
 				System.out.println("You chose Option Eight.");
 				ReverseString reverseString=new ReverseString();
 				reverseString.reverseString();
+				break;
+			case 9:
+				System.out.println("You chose Option nine.");
+				MaxAndMinNumber maxAndMinNumber=new MaxAndMinNumber();
+				maxAndMinNumber.maxAndMinNumber();
+				break;
+
+			case 10:
+				System.out.println("You chose Option nine.");
+				ThreeMaxAndMin maxAndMin=new ThreeMaxAndMin();
+				maxAndMin.ThreeMaxAndMin();
+				break;
+
+			case 11:
+				System.out.println("You chose Option nine.");
+				SecondlargestNumber secondlargestNumber=new SecondlargestNumber();
+				secondlargestNumber.secondLargestNumber();
 				break;
 
 			default:
